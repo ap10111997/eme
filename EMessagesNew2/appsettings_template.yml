@@ -1,0 +1,39 @@
+﻿ConnectionStrings:
+    DefaultConnection: server=localhost;UserId=user;Password=pass;database=db;allowUserVariables=true;
+
+Logging:
+    LogLevel:
+        Default: Information
+        System: Warning
+        Microsoft: Information
+
+Contacts:
+    PartsSize:
+        ContactsPerPart: 20
+        SearchResultsPerPart: 10
+
+General:
+    HashKeyLength: 261
+    ServerPath: https://me.alpi.pw
+
+Chats:
+    PartsSize:
+        MessagesInPart: 50
+        ChatsInPart: 20
+
+Users:
+    PartsSize:
+        PreviewImagesPartSize: 10
+    Paths:
+        MainPath: \wwwroot\App_Data\Users
+        ImagesPath: \Images
+        FilesPath: \Files
+    TokenExpirationTime: 604800
+
+FileRoutes:
+    Images:
+        Route: /image
+        Path: App_Data\Static\Images
+    UserImages:
+        Route: /user/image
+        Path: App_Data\Users\Images
